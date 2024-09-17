@@ -26,7 +26,9 @@ export default function MyHeader() {
 					alignItems: "center",
 				}}
 			>
-				<h1 style={{ color: "white", marginRight: 25 }}>💻 Coderboard</h1>
+				<Link to={`${Constants.BASE_PATH}/`}>
+					<h1 style={{ color: "white", marginRight: 25 }}>💻 Coderboard</h1>
+				</Link>
 				<Menu
 					theme="dark"
 					mode="horizontal"
