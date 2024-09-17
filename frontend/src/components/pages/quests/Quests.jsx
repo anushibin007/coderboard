@@ -1,3 +1,7 @@
 export default function Quests() {
-	return <></>;
+	return (
+		<>
+			<p>Quests</p>
+		</>
+	);
 }

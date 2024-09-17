@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import Constants from "./utils/Constants.js";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
+const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
 
 const router = createBrowserRouter([
 	{
@@ -20,6 +21,16 @@ const router = createBrowserRouter([
 					<>
 						<Suspense fallback={"Loading the landing page..."}>
 							<Landing />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/quests`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the landing page..."}>
+							<Quests />
 						</Suspense>
 					</>
 				),
