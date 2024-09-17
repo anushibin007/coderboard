@@ -1,7 +1,14 @@
-export default function Footer() {
+import { Layout } from "antd";
+const { Footer } = Layout;
+
+export default function MyFooter() {
 	return (
 		<>
-			<p>
+			<Footer
+				style={{
+					textAlign: "center",
+				}}
+			>
 				An{" "}
 				<a href="https://www.linkedin.com/in/anushibinj/" target="_blank">
 					anushibin007
@@ -11,7 +18,7 @@ export default function Footer() {
 					{" "}
 					GitHub
 				</a>
-			</p>
+			</Footer>
 		</>
 	);
 }
