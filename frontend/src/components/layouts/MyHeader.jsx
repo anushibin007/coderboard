@@ -26,7 +26,7 @@ export default function MyHeader() {
 					alignItems: "center",
 				}}
 			>
-				<div className="demo-logo" />
+				<h1 style={{ color: "white", marginRight: 25 }}>💻 Coderboard</h1>
 				<Menu
 					theme="dark"
 					mode="horizontal"
