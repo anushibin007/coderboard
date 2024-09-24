@@ -85,7 +85,7 @@ GET /api/v1/quests
 ]
 ```
 
-#### Get a Quests by ID
+#### Get a Quest by ID
 
 ```
 GET /api/v1/quests/Q1
