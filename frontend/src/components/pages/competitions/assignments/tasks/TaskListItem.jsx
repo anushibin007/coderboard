@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { Row, Col, Card, Tooltip, Button } from "antd";
-import Constants from "../../../../../utils/Constants";
+import { Row, Col, Card, Button } from "antd";
 
 export default function TaskListItem({ task }) {
 	const CardTitle = () => {
