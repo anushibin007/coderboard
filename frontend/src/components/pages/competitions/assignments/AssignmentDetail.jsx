@@ -1,9 +1,9 @@
 import { Col, Row } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import TaskListItem from "./tasks/TaskListItem";
 
-const assignment = {
+const mockAssignment = {
 	id: "C1-A1",
 	name: "JUnit 101 Assignment 1",
 	description: "A beginner level assignment for JUnit",
@@ -25,6 +25,15 @@ const assignment = {
 
 export default function AssignmentDetail() {
 	const { assignmentId } = useParams();
+	const [assignment, setAssignment] = useState({});
+
+	useEffect(() => {
+		fetchAssignment();
+	}, []);
+
+	const fetchAssignment = async () => {
+		setAssignment(mockAssignment);
+	};
 
 	return (
 		<>
