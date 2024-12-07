@@ -8,7 +8,6 @@ const competitions = [
 		name: "JUnit 101",
 		description: "A beginner level assignment-based learning for JUnit",
 		participants: 20,
-		completed: false,
 		owner: "Anu Shibin Joseph Raj",
 		startTime: "2023-09-01T10:00:00",
 		endTime: "2023-10-01T11:00:00",
