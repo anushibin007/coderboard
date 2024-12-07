@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Row, Col, Card, Tooltip } from "antd";
 import Constants from "../../../utils/Constants";
 
-export default function Competitions({ competition }) {
+export default function CompetitionListItem({ competition }) {
 	const CardTitle = () => {
 		return (
 			<>

@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import Competition from "./Competition";
+import CompetitionListItem from "./CompetitionListItem";
 import React from "react";
 
 const competitions = [
@@ -39,7 +39,7 @@ export default function Competitions() {
 				{competitions.map((competition) => (
 					<React.Fragment key={competition.id}>
 						<Col span={24}>
-							<Competition key={competition.id} competition={competition} />
+							<CompetitionListItem key={competition.id} competition={competition} />
 						</Col>
 					</React.Fragment>
 				))}
