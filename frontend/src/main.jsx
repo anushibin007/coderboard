@@ -6,6 +6,7 @@ const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
 const Competitions = lazy(() => import("./components/pages/competitions/Competitions.jsx"));
+const AssignmentsList = lazy(() => import("./components/pages/competitions/assignments/AssignmentsList.jsx"));
 
 const router = createBrowserRouter([
 	{
@@ -36,13 +37,22 @@ const router = createBrowserRouter([
 					</>
 				),
 			},
-			,
 			{
 				path: `${Constants.BASE_PATH}/competitions`,
 				element: (
 					<>
 						<Suspense fallback={"Loading the Competitions..."}>
 							<Competitions />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/competitions/:competitionId`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the Competition..."}>
+							<AssignmentsList />
 						</Suspense>
 					</>
 				),
