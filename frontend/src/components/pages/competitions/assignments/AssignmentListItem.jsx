@@ -26,7 +26,7 @@ export default function AssignmentListItem({ assignment }) {
 
 	return (
 		<>
-			<Link to={`${Constants.BASE_PATH}/competitions/${assignment.id}`}>
+			<Link to={`${Constants.BASE_PATH}/assignments/${assignment.id}`}>
 				<Card title={<CardTitle />} bordered hoverable>
 					{assignment.description}
 				</Card>

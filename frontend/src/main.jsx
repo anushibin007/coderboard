@@ -6,7 +6,12 @@ const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
 const Competitions = lazy(() => import("./components/pages/competitions/Competitions.jsx"));
-const AssignmentsList = lazy(() => import("./components/pages/competitions/assignments/AssignmentsList.jsx"));
+const AssignmentsList = lazy(() =>
+	import("./components/pages/competitions/assignments/AssignmentsList.jsx")
+);
+const AssignmentDetail = lazy(() =>
+	import("./components/pages/competitions/assignments/AssignmentDetail.jsx")
+);
 
 const router = createBrowserRouter([
 	{
@@ -53,6 +58,16 @@ const router = createBrowserRouter([
 					<>
 						<Suspense fallback={"Loading the Competition..."}>
 							<AssignmentsList />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/assignments/:assignmentId`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the Assignment..."}>
+							<AssignmentDetail />
 						</Suspense>
 					</>
 				),

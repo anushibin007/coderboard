@@ -41,7 +41,7 @@ export default function AssignmentsList() {
 	return (
 		<>
 			<h1>
-				Assignements for{" "}
+				Assignments for{" "}
 				<Link to={`${Constants.BASE_PATH}/competitions/C1`}>
 					{competitionId} - Junit 101
 				</Link>
