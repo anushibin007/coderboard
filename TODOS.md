@@ -1,1 +1,2 @@
 -   [ ] Add Quest Details Page
+-   [ ] Remove the extra padding around the whole website. Make it fill to the edge
