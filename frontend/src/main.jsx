@@ -5,6 +5,7 @@ import Constants from "./utils/Constants.js";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
+const Competitions = lazy(() => import("./components/pages/competitions/Competitions.jsx"));
 
 const router = createBrowserRouter([
 	{
@@ -29,8 +30,19 @@ const router = createBrowserRouter([
 				path: `${Constants.BASE_PATH}/quests`,
 				element: (
 					<>
-						<Suspense fallback={"Loading the landing page..."}>
+						<Suspense fallback={"Loading the Quests..."}>
 							<Quests />
+						</Suspense>
+					</>
+				),
+			},
+			,
+			{
+				path: `${Constants.BASE_PATH}/competitions`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the Competitions..."}>
+							<Competitions />
 						</Suspense>
 					</>
 				),
