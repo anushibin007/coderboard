@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import TaskListItem from "./tasks/TaskListItem";
@@ -37,7 +37,14 @@ export default function AssignmentDetail() {
 
 	return (
 		<>
-			<h1>Tasks for Assignment {assignmentId}</h1>
+			<Row justify="space-between">
+				<Col>
+					<h1>Tasks for Assignment {assignmentId}</h1>
+				</Col>
+				<Col>
+					<Button type="primary">Submit a Solution</Button>
+				</Col>
+			</Row>
 			<Row gutter={[16, 16]}>
 				{assignment?.tasks?.map((task) => (
 					<React.Fragment key={task.id}>
