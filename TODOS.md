@@ -4,7 +4,8 @@
     -   [ ] Frontend
         -   [ ] Remove the extra padding around the whole website. Make it fill to the edge
         -   [ ] Add Quest Details Page
-        -   [ ] Leaderboard
+        -   [x] Leaderboard
+        -   [ ] Make the Leaderboard more beautiful
         -   [ ] Show better timestamps for duration of Competitions
 -   [ ] v2
     -   [ ] Backend
