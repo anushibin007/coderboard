@@ -5,7 +5,9 @@
         -   [ ] Add Quest Details Page
         -   [x] Leaderboard
         -   [ ] Make the Leaderboard more beautiful
+        -   [ ] Make the View Submissions more beautiful
         -   [ ] Show better timestamps for duration of Competitions
+        -   [ ] Do not reveal future assignment data until it is the start time for that assignment
 -   [ ] v2
     -   [ ] Backend
         -   [ ] Authentication (through e-mail OTP)
@@ -13,3 +15,4 @@
     -   [ ] Frontend
         -   [ ] Show active participant count for each quest/competition
         -   [ ] When landing on a non-home page (like "Competitions") directly, the header NavLink related to that should be correctly highlighted.
+        -   [ ] Add a "Back" navigation button to every page
