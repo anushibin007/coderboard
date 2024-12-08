@@ -11,22 +11,6 @@ const competitions = [
 		owner: "Anu Shibin Joseph Raj",
 		startTime: "2023-09-01T10:00:00",
 		endTime: "2023-10-01T11:00:00",
-		assignments: [
-			{
-				id: "C1-A1",
-				name: "JUnit 101 Assignment 1",
-				description: "A beginner level assignment for JUnit",
-				startTime: "2023-09-01T10:00:00",
-				endTime: "2023-09-01T11:00:00",
-				questions: [
-					{
-						id: "C1-A1-Q1",
-						name: "Question",
-						description: "Do XYZ",
-					},
-				],
-			},
-		],
 	},
 ];
 

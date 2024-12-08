@@ -11,13 +11,6 @@ const assignments = [
 		description: "A beginner level assignment for JUnit",
 		startTime: "2023-09-01T10:00:00",
 		endTime: "2023-09-30T11:00:00",
-		tasks: [
-			{
-				id: "C1-A1-T1",
-				name: "Task 1 - Maven project with JUnit",
-				description: "Do XYZ",
-			},
-		],
 	},
 	{
 		id: "C1-A2",
@@ -25,13 +18,6 @@ const assignments = [
 		description: "A beginner level assignment for JUnit",
 		startTime: "2023-10-01T10:00:00",
 		endTime: "2023-10-30T11:00:00",
-		tasks: [
-			{
-				id: "C1-A1-T2",
-				name: "Task 2 - Sum of 2 numbers",
-				description: "Do ABC",
-			},
-		],
 	},
 ];
 
