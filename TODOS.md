@@ -5,8 +5,10 @@
         -   [ ] Remove the extra padding around the whole website. Make it fill to the edge
         -   [ ] Add Quest Details Page
         -   [ ] Leaderboard
+        -   [ ] Show better timestamps for duration of Competitions
 -   [ ] v2
     -   [ ] Backend
         -   [ ] Provide an option to "Participate" in a competition
     -   [ ] Frontend
         -   [ ] Show active participant count for each quest/competition
+        -   [ ] When landing on a non-home page (like "Competitions") directly, the header NavLink related to that should be correctly highlighted.
