@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Constants from "./utils/Constants.js";
+import LeaderBoard from "./components/pages/leaderboard/LeaderBoard.jsx";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
@@ -68,6 +69,16 @@ const router = createBrowserRouter([
 					<>
 						<Suspense fallback={"Loading the Assignment..."}>
 							<AssignmentDetail />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/leaderboard`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the Leaderboard..."}>
+							<LeaderBoard />
 						</Suspense>
 					</>
 				),

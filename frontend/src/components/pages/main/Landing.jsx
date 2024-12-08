@@ -14,6 +14,9 @@ export default function Landing() {
 			<h2>
 				🏆 Go to <Link to={`${Constants.BASE_PATH}/competitions`}>Competitions</Link>
 			</h2>
+			<h2>
+				🥇 Go to <Link to={`${Constants.BASE_PATH}/leaderboard`}>Leaderboard</Link>
+			</h2>
 		</div>
 	);
 }

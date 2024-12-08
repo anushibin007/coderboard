@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 const { Header } = Layout;
-import { HomeOutlined, CheckOutlined, FlagOutlined } from "@ant-design/icons";
+import { HomeOutlined, CheckOutlined, FlagOutlined, OrderedListOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import Constants from "../../utils/Constants";
 
@@ -19,6 +19,11 @@ const items = [
 		key: "competitions",
 		icon: <FlagOutlined />,
 		label: <Link to={`${Constants.BASE_PATH}/competitions`}>Competitions</Link>,
+	},
+	{
+		key: "leaderboard",
+		icon: <OrderedListOutlined />,
+		label: <Link to={`${Constants.BASE_PATH}/leaderboard`}>Leaderboard</Link>,
 	},
 ];
 
