@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import Constants from "./utils/Constants.js";
 import LeaderBoard from "./components/pages/leaderboard/LeaderBoard.jsx";
 import SubmitSolution from "./components/pages/common/SubmitSolution.jsx";
+import ViewSubmissions from "./components/pages/common/ViewSubmissions.jsx";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
@@ -90,6 +91,16 @@ const router = createBrowserRouter([
 					<>
 						<Suspense fallback={"Loading the Submission form..."}>
 							<SubmitSolution />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/submissions`,
+				element: (
+					<>
+						<Suspense fallback={"Loading Submissions..."}>
+							<ViewSubmissions />
 						</Suspense>
 					</>
 				),

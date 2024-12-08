@@ -43,11 +43,22 @@ export default function AssignmentDetail() {
 					<h1>Tasks for Assignment {assignmentId}</h1>
 				</Col>
 				<Col>
-					<Link
-						to={`${Constants.BASE_PATH}/submit?activityKind=Competition&activityId=${assignmentId}`}
-					>
-						<Button type="primary">Submit a Solution</Button>
-					</Link>
+					<Row gutter={16} justify="space-between">
+						<Col>
+							<Link
+								to={`${Constants.BASE_PATH}/submissions?activityKind=Competition&activityId=${assignmentId}`}
+							>
+								<Button>View Submissions</Button>
+							</Link>
+						</Col>
+						<Col>
+							<Link
+								to={`${Constants.BASE_PATH}/submit?activityKind=Competition&activityId=${assignmentId}`}
+							>
+								<Button type="primary">Submit a Solution</Button>
+							</Link>
+						</Col>
+					</Row>
 				</Col>
 			</Row>
 			<Row gutter={[16, 16]}>
