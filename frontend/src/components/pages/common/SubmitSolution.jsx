@@ -18,6 +18,7 @@ export default function SubmitSolution() {
 
 	return (
 		<>
+			<h1>Submit a Solution</h1>
 			<Form
 				name="basic"
 				onFinish={onFinish}
