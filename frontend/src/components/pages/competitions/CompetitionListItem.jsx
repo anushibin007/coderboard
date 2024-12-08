@@ -17,11 +17,11 @@ export default function CompetitionListItem({ competition }) {
 									⏱️ {competition.startTime} - {competition.endTime}
 								</Tooltip>
 							</Col>
-							<Col>
+							{/*<Col>
 								<Tooltip title="👨 Active participants in the quest">
 									👨 {competition.participants}
 								</Tooltip>
-							</Col>
+							</Col>*/}
 						</Row>
 					</Col>
 				</Row>

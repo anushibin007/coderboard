@@ -22,11 +22,11 @@ export default function Quest({ quest }) {
 									⚡ {quest.energy}
 								</Tooltip>
 							</Col>
-							<Col>
+							{/*<Col>
 								<Tooltip title="👨 Active participants in the quest">
 									👨 {quest.participants}
 								</Tooltip>
-							</Col>
+							</Col>*/}
 						</Row>
 					</Col>
 				</Row>
