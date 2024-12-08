@@ -7,9 +7,7 @@ export default function AssignmentListItem({ assignment }) {
 		return (
 			<>
 				<Row justify="space-between">
-					<Col>
-						{assignment.id} - {assignment.name}
-					</Col>
+					<Col>{assignment.name}</Col>
 					<Col>
 						<Row gutter={16} justify="space-between">
 							<Col>

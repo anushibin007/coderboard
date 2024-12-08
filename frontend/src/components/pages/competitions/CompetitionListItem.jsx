@@ -7,9 +7,7 @@ export default function CompetitionListItem({ competition }) {
 		return (
 			<>
 				<Row justify="space-between">
-					<Col>
-						{competition.id} - {competition.name}
-					</Col>
+					<Col>{competition.name}</Col>
 					<Col>
 						<Row gutter={16} justify="space-between">
 							<Col>
