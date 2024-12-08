@@ -1,4 +1,11 @@
 -   [ ] v1
+    -   [ ] Backend
+        -   [ ] Entity, Repo, Service & Controllers for
+            -   [ ] Competitions
+            -   [ ] Assignments
+            -   [ ] Tasks
+            -   [ ] Submissions
+            -   [ ] Leaderboard
     -   [ ] Frontend
         -   [x] Submit solutions by manually entering mail ID and answer
         -   [ ] Remove the extra padding around the whole website. Make it fill to the edge
@@ -8,6 +15,7 @@
         -   [ ] Make the View Submissions more beautiful
         -   [ ] Show better timestamps for duration of Competitions
         -   [ ] Do not reveal future assignment data until it is the start time for that assignment
+        -   [ ] Better Homepage?
 -   [ ] v2
     -   [ ] Backend
         -   [ ] Authentication (through e-mail OTP)
@@ -16,3 +24,4 @@
         -   [ ] Show active participant count for each quest/competition
         -   [ ] When landing on a non-home page (like "Competitions") directly, the header NavLink related to that should be correctly highlighted.
         -   [ ] Add a "Back" navigation button to every page
+        -   [ ] User-score based Leaderboard
