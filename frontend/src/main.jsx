@@ -2,9 +2,6 @@ import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Constants from "./utils/Constants.js";
-import LeaderBoard from "./components/pages/leaderboard/LeaderBoard.jsx";
-import SubmitSolution from "./components/pages/common/SubmitSolution.jsx";
-import ViewSubmissions from "./components/pages/common/ViewSubmissions.jsx";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
@@ -15,6 +12,9 @@ const AssignmentsList = lazy(() =>
 const AssignmentDetail = lazy(() =>
 	import("./components/pages/competitions/assignments/AssignmentDetail.jsx")
 );
+const LeaderBoard = lazy(() => import("./components/pages/leaderboard/LeaderBoard.jsx"));
+const SubmitSolution = lazy(() => import("./components/pages/common/SubmitSolution.jsx"));
+const ViewSubmissions = lazy(() => import("./components/pages/common/ViewSubmissions.jsx"));
 
 const router = createBrowserRouter([
 	{
