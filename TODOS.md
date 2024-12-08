@@ -1,7 +1,6 @@
 -   [ ] v1
-    -   [ ] Backend
-        -   [ ] Authentication (through e-mail OTP)
     -   [ ] Frontend
+        -   [x] Submit solutions by manually entering mail ID and answer
         -   [ ] Remove the extra padding around the whole website. Make it fill to the edge
         -   [ ] Add Quest Details Page
         -   [x] Leaderboard
@@ -9,6 +8,7 @@
         -   [ ] Show better timestamps for duration of Competitions
 -   [ ] v2
     -   [ ] Backend
+        -   [ ] Authentication (through e-mail OTP)
         -   [ ] Provide an option to "Participate" in a competition
     -   [ ] Frontend
         -   [ ] Show active participant count for each quest/competition
