@@ -1,2 +1,12 @@
--   [ ] Add Quest Details Page
--   [ ] Remove the extra padding around the whole website. Make it fill to the edge
+-   [ ] v1
+    -   [ ] Backend
+        -   [ ] Authentication (through e-mail OTP)
+    -   [ ] Frontend
+        -   [ ] Remove the extra padding around the whole website. Make it fill to the edge
+        -   [ ] Add Quest Details Page
+        -   [ ] Leaderboard
+-   [ ] v2
+    -   [ ] Backend
+        -   [ ] Provide an option to "Participate" in a competition
+    -   [ ] Frontend
+        -   [ ] Show active participant count for each quest/competition
