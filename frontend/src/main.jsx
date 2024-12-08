@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Constants from "./utils/Constants.js";
 import LeaderBoard from "./components/pages/leaderboard/LeaderBoard.jsx";
+import SubmitSolution from "./components/pages/common/SubmitSolution.jsx";
 const App = lazy(() => import("./App.jsx"));
 const Landing = lazy(() => import("./components/pages/main/Landing.jsx"));
 const Quests = lazy(() => import("./components/pages/quests/Quests.jsx"));
@@ -79,6 +80,16 @@ const router = createBrowserRouter([
 					<>
 						<Suspense fallback={"Loading the Leaderboard..."}>
 							<LeaderBoard />
+						</Suspense>
+					</>
+				),
+			},
+			{
+				path: `${Constants.BASE_PATH}/submit`,
+				element: (
+					<>
+						<Suspense fallback={"Loading the Submission form..."}>
+							<SubmitSolution />
 						</Suspense>
 					</>
 				),

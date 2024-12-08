@@ -1,7 +1,8 @@
 import { Button, Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TaskListItem from "./tasks/TaskListItem";
+import Constants from "../../../../utils/Constants";
 
 const mockAssignment = {
 	id: "C1-A1",
@@ -42,7 +43,11 @@ export default function AssignmentDetail() {
 					<h1>Tasks for Assignment {assignmentId}</h1>
 				</Col>
 				<Col>
-					<Button type="primary">Submit a Solution</Button>
+					<Link
+						to={`${Constants.BASE_PATH}/submit?activityKind=Competition&activityId=${assignmentId}`}
+					>
+						<Button type="primary">Submit a Solution</Button>
+					</Link>
 				</Col>
 			</Row>
 			<Row gutter={[16, 16]}>
