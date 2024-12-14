@@ -1,20 +1,17 @@
 import { Col, Row } from "antd";
 import CompetitionListItem from "./CompetitionListItem";
-import React from "react";
-
-const competitions = [
-	{
-		id: "C1",
-		name: "JUnit 101",
-		description: "A beginner level assignment-based learning for JUnit",
-		participants: 20,
-		owner: "Anu Shibin Joseph Raj",
-		startTime: "2023-09-01T10:00:00",
-		endTime: "2023-10-01T11:00:00",
-	},
-];
+import React, { useEffect, useState } from "react";
+import Constants from "../../../utils/Constants";
 
 export default function Competitions() {
+	const [competitions, setCompetitions] = useState([]);
+
+	useEffect(() => {
+		fetch(`${Constants.BACKEND_BASE_PATH}/api/v1/competitions`)
+			.then((response) => response.json())
+			.then((data) => setCompetitions(data))
+			.catch((error) => console.error("Error fetching data:", error));
+	}, []);
 	return (
 		<>
 			<h1>Competitions</h1>
