@@ -29,7 +29,7 @@ public class CompetitionController {
 	@PostMapping
 	public ResponseEntity<CompetitionEntity> createCompetition(@RequestBody CompetitionEntity competition) {
 		CompetitionEntity savedCompetition = competitionRepository.save(competition);
-		return new ResponseEntity<>(savedCompetition, HttpStatus.CREATED);
+		return new ResponseEntity<>(savedCompetition, HttpStatus.OK);
 	}
 
 	// Retrieve all competitions
@@ -48,25 +48,10 @@ public class CompetitionController {
 	}
 
 	// Update a competition by ID
-	@PutMapping("/{id}")
+	@PostMapping("/{id}")
 	public ResponseEntity<CompetitionEntity> updateCompetition(@PathVariable String id,
 			@RequestBody CompetitionEntity competitionDetails) {
-		Optional<CompetitionEntity> existingCompetition = competitionRepository.findById(id);
-
-		if (existingCompetition.isPresent()) {
-			CompetitionEntity competition = existingCompetition.get();
-			competition.setName(competitionDetails.getName());
-			competition.setDescription(competitionDetails.getDescription());
-			competition.setParticipants(competitionDetails.getParticipants());
-			competition.setOwner(competitionDetails.getOwner());
-			competition.setStartTime(competitionDetails.getStartTime());
-			competition.setEndTime(competitionDetails.getEndTime());
-
-			CompetitionEntity updatedCompetition = competitionRepository.save(competition);
-			return new ResponseEntity<>(updatedCompetition, HttpStatus.OK);
-		} else {
-			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-		}
+		return createCompetition(competitionDetails);
 	}
 
 	// Delete a competition by ID
